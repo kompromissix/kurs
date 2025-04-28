@@ -23,7 +23,17 @@ header{
                 list-style: circle;
             }
         }
-        >div{
+        >div:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+            width: 190px;
+            align-items: center;
+
+        }
+        h1{
+            font-size: 28px;
+        }
+        >div:nth-child(3){
             background-color: #F3F3F3;
             display: flex;
             align-items: center;

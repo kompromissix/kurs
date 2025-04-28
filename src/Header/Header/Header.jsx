@@ -8,16 +8,19 @@ export default function Header(){
         <>
             <header>
                 <nav>
-                    <img src={logo} alt="" />
+                    <div>
+                        <img src={logo} alt="" />
+                        <h1>AskExperts</h1>
+                    </div>
                     <ul>
                         <Link to='/Home'>
                             <li>Home</li>
                         </Link>
                         <Link to='/Services'>
-                            <li>Services</li>
+                            <li>Pages</li>
                         </Link>
                         <Link to='/Pages'>
-                            <li>Pages</li>
+                            <li>Services</li>
                         </Link>
                         <Link to='/Work'>
                             <li>Work</li>
@@ -34,7 +37,7 @@ export default function Header(){
                             <div>
                                 <img src={phone} alt="" />
                             </div>
-                            <a>+ (888) 452 1505</a>
+                            <p>+ (888) 452 1505</p>
                         </div>
                     </div>
                 </nav>
