@@ -15,8 +15,24 @@ import icon3 from './Home_assets/Icon3.png'
 import icon4 from './Home_assets/Icon4.png'
 import icon5 from './Home_assets/Icon5.png'
 import icon6 from './Home_assets/Icon6.png'
+import planet from './Home_assets/planet.png'
+import stat from './Home_assets/stat.png'
+import stat2 from './Home_assets/stat2.png'
+import pes from './Home_assets/pes.png'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper/modules'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { useState } from 'react';
+import Prev from './Home_assets/Prev.png'
+import Next from './Home_assets/Next.png'
+import Mushik from './Home_assets/mushik.png'
+import pic from './Home_assets/pic.png'
 
 export default function Home(){
+    const [currentSlide, setCurrentSlide] = useState(0);
     return(
         <>
             <main className='home'>
@@ -144,7 +160,7 @@ export default function Home(){
                             <div>
                                 <hr />
                                 <div>
-                                    <div>
+                                    <div className='one'>
                                         <h4>1</h4>
                                     </div>
                                     <div>
@@ -154,7 +170,7 @@ export default function Home(){
                                 </div>
                                 <hr />
                                 <div>
-                                    <div>
+                                    <div className='two'>
                                         <h4>2</h4>
                                     </div>
                                     <div>
@@ -164,7 +180,7 @@ export default function Home(){
                                 </div>
                                 <hr />
                                 <div>
-                                    <div>
+                                    <div className='three'>
                                         <h4>3</h4>
                                     </div>
                                     <div>
@@ -175,14 +191,229 @@ export default function Home(){
                             </div>
                         </div>
                         <div>
-                            
+                            <div>
+                                <p>Growing with our clients</p>
+                            </div>
+                            <h2>30 Years of Experience</h2>
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps. <br /> <br /> Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <img src={pes} alt="" />
+                                        <h3>Consistency</h3>
+                                        <p>Podcasting operational change management  workflow.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src={stat} alt="" />
+                                        <h3>Improvement</h3>
+                                        <p>Podcasting operational change management  workflow.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src={planet} alt="" />
+                                        <h3>Branching</h3>
+                                        <p>Podcasting operational change management  workflow.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src={stat2} alt="" />
+                                        <h3>Company Growth</h3>
+                                        <p>Podcasting operational change management  workflow.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section className='background6'>
-                    <div></div>
                     <div>
-                        
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Proccess</p>
+                        </div>
+                        <div>
+                            <h2>Our client, global analytical techno company, wanted to build market.</h2>
+                            <div>
+                                <p>More Gallery</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <p>+</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Taxes & Efficiency</h3>
+                                                <p>Business</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <p>+</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Taxes & Efficiency</h3>
+                                                <p>Business</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <p>+</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Taxes & Efficiency</h3>
+                                                <p>Business</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <p>+</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Taxes & Efficiency</h3>
+                                                <p>Business</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <p>+</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Taxes & Efficiency</h3>
+                                                <p>Business</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <p>+</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Taxes & Efficiency</h3>
+                                                <p>Business</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className='background7'>
+                    <div>
+                        <div>
+                            <h3>1128+</h3>
+                            <p>Successful Work</p>
+                        </div>
+                        <div>
+                            <h3>908+</h3>
+                            <p>Team member</p>
+                        </div>
+                        <div>
+                            <h3>258+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div>
+                            <h3>564+</h3>
+                            <p>Creative Idea</p>
+                        </div>
+                    </div>
+                </section>
+                <section className='background8'>
+                    <div>
+                        <div>
+                            <p>Client Feedback</p>
+                        </div>
+                        <h2>“Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit, sed do eiusmod</span> tempor incididunt ut labore et dolore”</h2>
+                        <div>
+                            <button type="button" className='custom-prev'>
+                                <img src={Prev} alt="" />
+                                <p>Prev</p>
+                            </button>
+                            <Swiper modules={[Navigation]} spaceBetween={50} slidesPerView={1} navigation={{ nextEl: '.custom-next', prevEl: '.custom-prev', }} onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}>
+                                <SwiperSlide>
+                                    <img src={Mushik} alt="" />
+                                    <div>
+                                        <h3>Kathleen Smith</h3>
+                                        <h4>Web Designer</h4>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={Mushik} alt="" />
+                                    <div>
+                                        <h3>Kathleen Smith</h3>
+                                        <h4>Web Designer</h4>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={Mushik} alt="" />
+                                    <div>
+                                        <h3>Kathleen Smith</h3>
+                                        <h4>Web Designer</h4>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                            <button type="button" className='custom-next'>
+                                <p>Next</p>
+                                <img src={Next} alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section className='background9'>
+                    <div>
+                        <div>
+                            <div>
+                                <p>Book Now</p>
+                            </div>
+                            <h2>Better Consult, Better Results</h2>
+                            <p>Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid to take initiative – drop us a note and join our team!</p>
+                            <div>
+                                <img src="" alt="" />
+                                <p>+800 1234 654 </p>
+                            </div>
+                        </div>
+                        <img src={pic} alt="" />
                     </div>
                 </section>
             </main>
