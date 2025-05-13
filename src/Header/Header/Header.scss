@@ -23,12 +23,13 @@ header{
                 list-style: circle;
             }
         }
-        >div:nth-child(1){
+        >a:nth-child(1){
             display: flex;
             justify-content: space-between;
             width: 190px;
             align-items: center;
-
+            text-decoration: none;
+            color: black;
         }
         h1{
             font-size: 28px;

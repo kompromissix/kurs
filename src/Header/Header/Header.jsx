@@ -8,12 +8,12 @@ export default function Header(){
         <>
             <header>
                 <nav>
-                    <div>
+                    <Link to='/Home'>
                         <img src={logo} alt="" />
                         <h1>AskExperts</h1>
-                    </div>
+                    </Link>
                     <ul>
-                        <Link to='/Home'>
+                        <Link to='/Home2'>
                             <li>Home</li>
                         </Link>
                         <Link to='/Services'>
