@@ -30,6 +30,12 @@ import Prev from './Home_assets/Prev.png'
 import Next from './Home_assets/Next.png'
 import Mushik from './Home_assets/mushik.png'
 import pic from './Home_assets/pic.png'
+import Phone from './Home_assets/Phone.png'
+import woman from './Home_assets/woman.png'
+import alax from './Home_assets/alax.png'
+import icon_m from './Home_assets/icon-m.png'
+import icon_w from './Home_assets/icon-w.png'
+
 
 export default function Home(){
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -406,14 +412,75 @@ export default function Home(){
                             <div>
                                 <p>Book Now</p>
                             </div>
-                            <h2>Better Consult, Better Results</h2>
+                            <h2>Better Consult, <span>Better</span> Results</h2>
                             <p>Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid to take initiative – drop us a note and join our team!</p>
                             <div>
-                                <img src="" alt="" />
+                                <img src={Phone} alt="" />
                                 <p>+800 1234 654 </p>
                             </div>
                         </div>
                         <img src={pic} alt="" />
+                    </div>
+                </section>
+                <section className='background10'>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <p>BLOG</p>
+                                </div>
+                                <h2>Take a look at our latest articles & resources</h2>
+                            </div>
+                            <div>
+                                <p>More News</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src={woman} alt="" />
+                                <h3>Consulting Fees Study 2019 (And How To Raise Your Rates)</h3>
+                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                                <div>
+                                    <hr />
+                                    <div>
+                                        <div>
+                                            <img src={icon_m} alt="" />
+                                            <div>
+                                                <p>John Carter</p>
+                                                <hr />
+                                                <p>September 1, 2022</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div>
+                                <img src={alax} alt="" />
+                                <h3>What is growth hacking and how to apply it to your startup</h3>
+                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                                <div>
+                                    <hr />
+                                    <div>
+                                        <div>
+                                            <img src={icon_w} alt="" />
+                                            <div>
+                                                <p>Nayra Melson</p>
+                                                <hr />
+                                                <p>September 1, 2022</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
