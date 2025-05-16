@@ -1,0 +1,100 @@
+.ftwo{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 674px;
+    padding-bottom: 26px;
+    p{
+        color:#595566;
+    }
+    li{
+        color:#595566;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    span{
+        font-weight: 600;
+        color: black;
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 1200px;
+        height: 340px;
+        >div:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            width: 100%;
+            height: 252px;
+            >div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+            }
+            >div:nth-child(1){
+                height: 229px;
+            }
+            >div:nth-child(2){
+                height: 206px;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 184px;
+                }
+            }
+            >div:nth-child(3){
+                height: 252px;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 222px;
+                }
+            }
+            >div:nth-child(4){
+                height: 241px;
+                width: 226px;
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 204px; 
+                    >div{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 82px;
+                    }
+                }
+            }
+            >div:nth-child(5){
+                height: 209px;
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 200px;
+                }
+            }
+        }
+        >div:nth-child(2){
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            height: 43px;
+            hr{
+                width: 100%;
+            }
+        }
+    }
+}

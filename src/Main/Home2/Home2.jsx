@@ -20,8 +20,8 @@ import Sphoto4 from './Home_assets/sphoto4.png'
 import Cgart1 from './Home_assets/Cgart.png'
 import Cgart2 from './Home_assets/Cgart2.png'
 import Cgart3 from './Home_assets/Cgart3.png'
-import green from './Home_assets/1.png'
-import orange from './Home_assets/2.png'
+import green from './Home_assets/gr.png'
+import orange from './Home_assets/or.png'
 import Iconb1 from './Home_assets/Iconb1.png'
 import Iconb2 from './Home_assets/Iconb2.png'
 import Iconb3 from './Home_assets/Iconb3.png'
@@ -30,6 +30,17 @@ import Mushik1 from './Home_assets/Mushik1.png'
 import Mushik2 from './Home_assets/Mushik2.png'
 import Mushik3 from './Home_assets/Mushik3.png'
 import kav from './Home_assets/kav.png'
+import Next from './Home_assets/Next.png'
+import Prev from './Home_assets/Prev.png'
+import img1 from './Home_assets/1.png'
+import img2 from './Home_assets/2.png'
+import img3 from './Home_assets/3.png'
+import img4 from './Home_assets/4.png'
+import img5 from './Home_assets/5.png'
+import img6 from './Home_assets/6.png'
+import strelochki from './Home_assets/strelochki.png'
+import ruki from './Home_assets/ruki.png'
+import Footertwo from '../../Footer/Footer2/Footer'
 
 export default function Home2(){
     return(
@@ -487,9 +498,9 @@ export default function Home2(){
                             </div>
                         </div>
                         <div>
-                            <Swiper modules={[Navigation]} spaceBetween={50} slidesPerView={1} navigation={{ nextEl: '.custom-next', prevEl: '.custom-prev', }} onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}>
+                            <Swiper modules={[Navigation]} spaceBetween={50} slidesPerView={3} navigation={{ nextEl: '.custom-next', prevEl: '.custom-prev', }} onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}>
                                 <SwiperSlide>
-                                    <div>
+                                    <div className='cardbot'>
                                         <div>
                                             <div>
                                                 <img src={Mushik1} alt="" />
@@ -503,12 +514,77 @@ export default function Home2(){
                                             <div>
                                                 <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque habitant morbil.</p>
                                             </div>
-                                            <img src={kav} alt="" />
+                                            <div>
+                                                <img src={kav} alt="" />
+                                            </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div>
+                                    <div className='cardbot'>
+                                        <div>
+                                            <div>
+                                                <img src={Mushik2} alt="" />
+                                                <div>
+                                                    <p>Kathleen Smith</p>
+                                                    <div>
+                                                        <p>Web Designer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque habitant morbil.</p>
+                                            </div>
+                                            <div>
+                                                <img src={kav} alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='cardbot'>
+                                        <div>
+                                            <div>
+                                                <img src={Mushik3} alt="" />
+                                                <div>
+                                                    <p>Kathleen Smith</p>
+                                                    <div>
+                                                        <p>Web Designer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque habitant morbil.</p>
+                                            </div>
+                                            <div>
+                                                <img src={kav} alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='cardbot'>
+                                        <div>
+                                            <div>
+                                                <img src={Mushik1} alt="" />
+                                                <div>
+                                                    <p>Kathleen Smith</p>
+                                                    <div>
+                                                        <p>Web Designer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque habitant morbil.</p>
+                                            </div>
+                                            <div>
+                                                <img src={kav} alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='cardbot'>
                                         <div>
                                             <div>
                                                 <img src={Mushik2} alt="" />
@@ -520,28 +596,30 @@ export default function Home2(){
                                                 </div>
                                             </div>
                                             <div>
-                                                <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque aservices, and become a multinational firm, offering solutions Worldwide.</p>
+                                                <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque habitant morbil.</p>
                                             </div>
-                                            <img src={kav} alt="" />
+                                            <div>
+                                                <img src={kav} alt="" />
+                                            </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div>
+                                    <div className='cardbot'>
                                         <div>
                                             <div>
+                                                <img src={Mushik3} alt="" />
                                                 <div>
-                                                    <img src={Mushik3} alt="" />
+                                                    <p>John Martin</p>
                                                     <div>
-                                                        <p>Natalia Duke</p>
-                                                        <div>
-                                                            <p>Web Designer</p>
-                                                        </div>
+                                                        <p>Web Designer</p>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque habitant morbil.</p>
-                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus  turpis.  pellentesque habitant morbil.</p>
+                                            </div>
+                                            <div>
                                                 <img src={kav} alt="" />
                                             </div>
                                         </div>
@@ -561,7 +639,159 @@ export default function Home2(){
                         </div>
                     </div>
                 </section>
+                <section className='background8'>
+                    <div>
+                        <div>
+                            <p>Our Team</p>
+                        </div>
+                        <h2>Trusted by some Biggest Names</h2>
+                        <div>
+                            <p>View Team Detail</p>
+                        </div>
+                    </div>
+                </section>
+                <section className='background9'>
+                    <div>
+                        <img src={img1} alt="" />
+                        <img src={img2} alt="" />
+                        <img src={img3} alt="" />
+                        <img src={img4} alt="" />
+                        <img src={img5} alt="" />
+                        <img src={img6} alt="" />
+                    </div>
+                </section>
+                <section className='background10'>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <p>Choose Your Plan</p>
+                                </div>
+                                <h2>Save With Our Pricing Packages</h2>
+                                <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus sed turpis. Pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+                                <div>
+                                    <div>
+                                        <input type="radio" />
+                                        <p>Monthly</p>
+                                    </div>
+                                    <div>
+                                        <input type="radio" />
+                                        <p>Yearly</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <h3>Standard Plan</h3>
+                                                    </div>
+                                                    <div>
+                                                        <p>The argument in favor of using to filler text goes something.</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>$56</p>
+                                                    <div>
+                                                        <p>Monthly</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>24/7 system monitoring</p>
+                                            </div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>Security management</p>
+                                            </div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>Secure finance backup</p>
+                                            </div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>Remote support</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Get This Plan</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <h3>Standard Plan</h3>
+                                                    <p>The argument in favor of using to filler text goes something.</p>
+                                                </div>
+                                                <div>
+                                                    <p>$75</p>
+                                                    <div>
+                                                        <p>Monthly</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>24/7 system monitoring</p>
+                                            </div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>Security management</p>
+                                            </div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>Secure finance backup</p>
+                                            </div>
+                                            <div>
+                                                <img src={strelochki} alt="" />
+                                                <p>Remote support</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Get This Plan</p>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <p>Contact</p>
+                                        </div>
+                                        <h2>Ready To Talk?</h2>
+                                        <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus sed turpis. Pellentesque  pellentesque habitant morbi tristique.</p>
+                                        <div>
+                                            <input type="text" placeholder='your mail address'/>
+                                            <button type="button">
+                                                <p>Send Message</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img src={ruki} alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
             </main>
+            <Footertwo/>
         </>
     )
 }

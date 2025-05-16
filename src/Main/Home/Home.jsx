@@ -35,12 +35,14 @@ import woman from './Home_assets/woman.png'
 import alax from './Home_assets/alax.png'
 import icon_m from './Home_assets/icon-m.png'
 import icon_w from './Home_assets/icon-w.png'
-
+import Header_All from '../../Header/Header_All/Header_All'
+import Footer from '../../Footer/Footer1/Footer'
 
 export default function Home(){
     const [currentSlide, setCurrentSlide] = useState(0);
     return(
         <>
+            <Header_All/>
             <main className='home'>
                 <section className='background1'>
                     <div>
@@ -484,6 +486,7 @@ export default function Home(){
                     </div>
                 </section>
             </main>
+            <Footer/>
         </>
     )
 }

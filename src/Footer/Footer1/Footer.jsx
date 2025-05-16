@@ -4,7 +4,7 @@ import Logo from '../../Header/Header/Header_assets/Logo.png'
 export default function Footer(){
     return(
         <>
-            <footer>
+            <footer className='fone'>
                 <div>
                     <div>
                         <div>
