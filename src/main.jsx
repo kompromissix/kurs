@@ -4,6 +4,8 @@ import './index.css'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './Main/Home/Home'
 import Home2 from './Main/Home2/Home2'
+import About from './Main/About/About'
+import Services from './Main/Services/Services'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,12 +14,8 @@ createRoot(document.getElementById('root')).render(
         <Route index element={<Home/>} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Home2" element={<Home2 />} />
-        {/* </>
-        <Services/>
-        <Pages/>
-        <Work/>
-        <Pages/>
-        <Contact/> */}
+        <Route path="/About" element={<About />} />
+        <Route path="/Services" element={<Services />} />
       </Routes>
     </HashRouter>
   </StrictMode>,

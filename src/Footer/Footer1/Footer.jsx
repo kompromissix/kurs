@@ -1,5 +1,6 @@
 import './Footer.scss'
 import Logo from '../../Header/Header/Header_assets/Logo.png'
+import { Link } from 'react-router-dom'
 
 export default function Footer(){
     return(
@@ -31,7 +32,7 @@ export default function Footer(){
                                 <h3>Company</h3>
                                 <hr />
                                 <ul>
-                                    <li>About</li>
+                                    <li><Link to='/About'>About</Link></li>
                                     <li>News</li>
                                     <li>Contacts</li>
                                     <li>Testimonials</li>

@@ -38,6 +38,87 @@ import icon_w from './Home_assets/icon-w.png'
 import Header_All from '../../Header/Header_All/Header_All'
 import Footer from '../../Footer/Footer1/Footer'
 
+export function Black(){
+    return(
+        <>
+            <section className='background9'>
+                <div>
+                    <div>
+                        <div>
+                            <p>Book Now</p>
+                        </div>
+                        <h2>Better Consult, <span>Better</span> Results</h2>
+                        <p>Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid to take initiative – drop us a note and join our team!</p>
+                        <div>
+                            <img src={Phone} alt="" />
+                            <p>+800 1234 654 </p>
+                        </div>
+                    </div>
+                    <img src={pic} alt="" />
+                </div>
+            </section>
+        </>
+    )
+}
+export function Grid(){
+    return(
+        <>
+            <section className='background4'>
+                <div>
+                    <div>
+                        <p>Services</p>
+                    </div>
+                    <h2>Get Control Over Your Business I take your finance to next level</h2>
+                    <div>
+                        <div>
+                            <div>
+                                <img src={icon1} alt="" />
+                                <h3>Audit & Evaluation</h3>
+                                <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src={icon2} alt="" />
+                                <h3>Financial Projections</h3>
+                                <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src={icon3} alt="" />
+                                <h3>Funds and investments</h3>
+                                <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src={icon4} alt="" />
+                                <h3>Finance & Restructuring</h3>
+                                <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src={icon5} alt="" />
+                                <h3>Taxes & Efficiency</h3>
+                                <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src={icon6} alt="" />
+                                <h3>Investment banking</h3>
+                                <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
 export default function Home(){
     const [currentSlide, setCurrentSlide] = useState(0);
     return(
@@ -105,58 +186,7 @@ export default function Home(){
                         <img src={img} alt="" />
                     </div>
                 </section>
-                <section className='background4'>
-                    <div>
-                        <div>
-                            <p>Services</p>
-                        </div>
-                        <h2>Get Control Over Your Business I take your finance to next level</h2>
-                        <div>
-                            <div>
-                                <div>
-                                    <img src={icon1} alt="" />
-                                    <h3>Audit & Evaluation</h3>
-                                    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src={icon2} alt="" />
-                                    <h3>Financial Projections</h3>
-                                    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src={icon3} alt="" />
-                                    <h3>Funds and investments</h3>
-                                    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src={icon4} alt="" />
-                                    <h3>Finance & Restructuring</h3>
-                                    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src={icon5} alt="" />
-                                    <h3>Taxes & Efficiency</h3>
-                                    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src={icon6} alt="" />
-                                    <h3>Investment banking</h3>
-                                    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Grid/>
                 <section className='background5'>
                     <div>
                         <div>
@@ -408,22 +438,7 @@ export default function Home(){
                         </div>
                     </div>
                 </section>
-                <section className='background9'>
-                    <div>
-                        <div>
-                            <div>
-                                <p>Book Now</p>
-                            </div>
-                            <h2>Better Consult, <span>Better</span> Results</h2>
-                            <p>Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid to take initiative – drop us a note and join our team!</p>
-                            <div>
-                                <img src={Phone} alt="" />
-                                <p>+800 1234 654 </p>
-                            </div>
-                        </div>
-                        <img src={pic} alt="" />
-                    </div>
-                </section>
+                <Black/>
                 <section className='background10'>
                     <div>
                         <div>

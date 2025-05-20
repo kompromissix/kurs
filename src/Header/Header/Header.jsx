@@ -16,10 +16,10 @@ export default function Header(){
                         <Link to='/Home2'>
                             <li>Home</li>
                         </Link>
-                        <Link to='/Services'>
+                        <Link to='/Pages'>
                             <li>Pages</li>
                         </Link>
-                        <Link to='/Pages'>
+                        <Link to='/Services'>
                             <li>Services</li>
                         </Link>
                         <Link to='/Work'>
