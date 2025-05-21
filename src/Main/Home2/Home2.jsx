@@ -41,8 +41,10 @@ import img6 from './Home_assets/6.png'
 import strelochki from './Home_assets/strelochki.png'
 import ruki from './Home_assets/ruki.png'
 import Footertwo from '../../Footer/Footer2/Footer'
+import { useState } from "react";
 
 export default function Home2(){
+    const [selectedOption, setSelectedOption] = useState("monthly");
     return(
         <>
             <Header/>
@@ -671,99 +673,186 @@ export default function Home2(){
                                 <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus sed turpis. Pellentesque pulvinar pellentesque habitant morbi tristique.</p>
                                 <div>
                                     <div>
-                                        <input type="radio" />
-                                        <p>Monthly</p>
+                                      <input type="radio" id="Monthly" name="subscription" value="monthly" checked={selectedOption === "monthly"} onChange={() => setSelectedOption("monthly")} />
+                                      <label for="Monthly">Monthly</label>
                                     </div>
                                     <div>
-                                        <input type="radio" />
-                                        <p>Yearly</p>
+                                      <input type="radio" id="Yearly" name="subscription" value="yearly" checked={selectedOption === "yearly"} onChange={() => setSelectedOption("yearly")} />
+                                      <label for="Yearly">Yearly</label>
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            {selectedOption === "monthly" ? (
                                 <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <h3>Standard Plan</h3>
+                                                        </div>
+                                                        <div>
+                                                            <p>The argument in favor of using to filler text goes something.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p>$56</p>
+                                                        <div>
+                                                            <p>Monthly</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>24/7 system monitoring</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Security management</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Secure finance backup</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Remote support</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Get This Plan</p>
+                                            </div>
+                                        </div>
+                                    </div> 
                                     <div>
                                         <div>
                                             <div>
                                                 <div>
                                                     <div>
                                                         <h3>Standard Plan</h3>
-                                                    </div>
-                                                    <div>
                                                         <p>The argument in favor of using to filler text goes something.</p>
                                                     </div>
-                                                </div>
-                                                <div>
-                                                    <p>$56</p>
                                                     <div>
-                                                        <p>Monthly</p>
+                                                        <p>$75</p>
+                                                        <div>
+                                                            <p>Monthly</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>24/7 system monitoring</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Security management</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Secure finance backup</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Remote support</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Get This Plan</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>24/7 system monitoring</p>
-                                            </div>
-                                            <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>Security management</p>
-                                            </div>
-                                            <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>Secure finance backup</p>
-                                            </div>
-                                            <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>Remote support</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>Get This Plan</p>
-                                        </div>
-                                    </div>
-                                </div> 
+                                    </div>     
+                                </div>
+                            ) : (
                                 <div>
                                     <div>
                                         <div>
                                             <div>
                                                 <div>
-                                                    <h3>Standard Plan</h3>
-                                                    <p>The argument in favor of using to filler text goes something.</p>
-                                                </div>
-                                                <div>
-                                                    <p>$75</p>
                                                     <div>
-                                                        <p>Monthly</p>
+                                                        <div>
+                                                            <h3>Standard Plan</h3>
+                                                        </div>
+                                                        <div>
+                                                            <p>The argument in favor of using to filler text goes something.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p>$522</p>
+                                                        <div>
+                                                            <p>Yearly</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>24/7 system monitoring</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Security management</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Secure finance backup</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Remote support</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Get This Plan</p>
+                                            </div>
                                         </div>
+                                    </div> 
+                                    <div>
                                         <div>
                                             <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>24/7 system monitoring</p>
+                                                <div>
+                                                    <div>
+                                                        <h3>Standard Plan</h3>
+                                                        <p>The argument in favor of using to filler text goes something.</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>$305</p>
+                                                        <div>
+                                                            <p>Yearly</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>Security management</p>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>24/7 system monitoring</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Security management</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Secure finance backup</p>
+                                                </div>
+                                                <div>
+                                                    <img src={strelochki} alt="" />
+                                                    <p>Remote support</p>
+                                                </div>
                                             </div>
                                             <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>Secure finance backup</p>
-                                            </div>
-                                            <div>
-                                                <img src={strelochki} alt="" />
-                                                <p>Remote support</p>
+                                                <p>Get This Plan</p>
                                             </div>
                                         </div>
-                                        <div>
-                                            <p>Get This Plan</p>
-                                        </div>
-                                    </div>
-                                </div>     
-                            </div>
+                                    </div>     
+                                </div>
+                            )}
                         </div>
                     </div>
                     <div>

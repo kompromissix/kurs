@@ -23,7 +23,7 @@ export default function Footer(){
                                 <ul>
                                     <li>Service</li>
                                     <li>FAQ</li>
-                                    <li>Single Service</li>
+                                    <li><Link to='/Service_Single'>Service Single</Link></li>
                                     <li>Get Quote</li>
                                     <li>Prices</li>
                                 </ul>

@@ -1,0 +1,314 @@
+@mixin block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin yellow{
+    background-color: #FFCC4A;
+}
+.Service_Single{
+    .background1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 487px;
+        background-image: url(./Service_Single_assets/background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffffD8;
+            width: 788px;
+            height: 267px;
+            border-radius: 29px;
+            margin-right: 400px;
+            >div{
+                width: 688px;
+                height: 161px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2{
+                    font-size: 50px;
+                }
+                >div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFCC4A;
+                    color: black;
+                    width: 118px;
+                    height: 24px;
+                    border-radius: 20px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    .background2{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 893px;
+        background-color: #F5F5F5;
+        >div{
+            width: 1560px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            >div:nth-child(1){
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                width: 1200px;
+                height: 225px;
+                >div:nth-child(1){
+                    width: 648px;
+                    height: 225px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    h2{
+                        font-size: 45px;
+                    }
+                    p{
+                        color: #595566;
+                    }
+                }
+                >div:nth-child(2){
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 168px;
+                    height: 70px;
+                    >button{
+                        border: none;
+                    }
+                }
+            }
+            >div:nth-child(2){
+                width: 100%;
+                height: 247px;
+                .card_slide_Service_Single{
+                    @include center;
+                    width: 345px;
+                    height: 247px;
+                    background-color: #EBEBEB;
+                    border-radius: 20px;
+                    >div{
+                        width: 275px;
+                        height: 159px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: start;
+                        h3{
+                            font-size: 25px;
+                        }
+                        p{
+                            color: #595566;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .background3{
+        @include center;
+        width: 100%;
+        height: 559px;
+        >div{
+            width: 1300px;
+            height: 462px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            >div{
+                width: 481px;
+                height: 317px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                >div:nth-child(1){
+                    width: 249px;
+                    height: 24px;
+                    @include block;
+                    @include yellow;
+                }
+                h2{
+                    font-size: 45px;
+                }
+                >p{
+                    color: #595566;
+                }
+                >div:nth-child(4){
+                    width: 416px;
+                    height: 94px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    >div{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        width: 436px;
+                        height: 38px;
+                        >p{
+                            width: 399px;
+                            color: #595566;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .background4{
+        width: 100%;
+        height: 164px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1800px;
+            opacity: 50%;
+        }
+    }
+    .background5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 841px;
+        background-color: #181818;
+        >div{
+            width: 944px;
+            height: 537px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            >div:nth-child(1){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 580px;
+                height: 152px;
+                text-align: center;
+                >div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #4EAF4E;
+                    color: white;
+                    width: 151px;
+                    height: 24px;
+                    border-radius: 20px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                h2{
+                    font-size: 45px;
+                    color: white;
+                }
+            }
+            >div:nth-child(2){
+                background-image: url(./Service_Single_assets/background2.png);
+                width: 944px;
+                height: 373px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >iframe{
+                    border-radius: 28px;
+                }
+            }
+        }
+    }
+    .background6{
+        @include center;
+        width: 100%;
+        height: 850px;
+        >div{
+            width: 1268px;
+            height: 574px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            >div{
+                width: 470px;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                >div:nth-child(1){
+                    @include yellow;
+                    @include block;
+                    width: 127px;
+                    height: 26px;
+                }
+                h2{
+                    font-size: 45px;
+                }
+                >p{
+                    color: #595566;
+                }
+                >div:nth-child(4){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    width: 330px;
+                    height: 296px;
+                    >div{
+                        display: flex;
+                        align-items: center;
+                        >div{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: start;
+                            padding-left: 16px;
+                            p{
+                                color: #595566;
+                            }
+                            h3{
+                                font-size: 20px;
+                                padding-top: 3px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .background7{
+        
+    }
+}
