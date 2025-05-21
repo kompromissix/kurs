@@ -1,3 +1,17 @@
+@mixin block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .services{
     .background1{
         display: flex;
@@ -57,17 +71,12 @@
             align-items: center;
             height: 842px;
             >div:nth-child(1){
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include block;
                 background-color: #4EAF4E;
                 color: white;
                 width: 120px;
                 height: 24px;
-                border-radius: 20px;
-                font-size: 16px;
-                text-transform: uppercase;
-                letter-spacing: 2px;
+
             }
             >h2{
                 font-size: 45px;
@@ -111,6 +120,188 @@
                     color: white;
                         p{
                         color: white;
+                    }
+                }
+            }
+        }
+    }
+    .background2{
+        width: 100%;
+        height: 885px;
+        @include center;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1282px;
+            height: 590px;
+            >div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                width: 473px;
+                >div:nth-child(1){
+                    @include block;
+                    width: 107px;
+                    height: 25px;
+                    background-color: #FFCC4A;
+                    color: #181818;
+                }
+                h2{
+                    font-size: 45px;
+                    width: 100%;
+                }
+                >div:nth-child(3){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 459px;
+                    height: 399px;
+                    >div{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        width: 100%;
+                        height: 108px;
+                        >div{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: start;
+                            width: 408px;
+                            height: 108px;
+                            h3{
+                                font-size: 20px;
+                            }
+                            p{
+                                font-size: 16px;
+                                color: #595566;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .background3{
+        @include center;
+        width: 100%;
+        height: 1016px;
+        background-color: #F5F5F5;
+        >div{
+            width: 1200px;
+            height: 718px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            >div:nth-child(1){
+                @include block;
+                background-color: #4EAF4E;
+                width: 106px;
+                height: 24px;
+            }
+            h2{
+                font-size: 45px;
+            }
+            >div:nth-child(3){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 580px;
+                >div{
+                    width: 387px;
+                    height: 611px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    border-radius: 21px;
+                    >div{
+                        width: 340px;
+                        height: 546px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: start;
+                        >div:nth-child(1){
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-image: url(./Services_assets/Back2.png);
+                            width: 340px;
+                            height: 246px;
+                            border-radius: 21px;
+                            color: white;
+                            >div{
+                                width: 271px;
+                                height: 184px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                >div:nth-child(1){
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    height: 90px;
+                                    h3{
+                                        font-size: 26px;
+                                    }
+                                }
+                                >div:nth-child(2){
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 250px;
+                                    height: 61px;
+                                    >p{
+                                        font-size: 52px;
+                                        font-weight: 600;
+                                    }
+                                    >div{
+                                        width: 130px;
+                                        height: 25px;
+                                        background-color: #4EAF4E;
+                                        color: white;
+                                        border-radius: 20px;
+                                        font-size: 16px;
+                                        text-transform: uppercase;
+                                        letter-spacing: 2px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                        >div:nth-child(2){
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 216px;
+                            height: 168px;
+                            padding-left: 30px;
+                            >div{
+                                display: flex;
+                                align-items: center;
+                                >p{
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+                        >div:nth-child(3){
+                            width: 340px;
+                            height: 61px;
+                            background-color: #FFCC4A;
+                            border-radius: 44px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 19px;
+                            font-weight: 600;
+                        }
                     }
                 }
             }
