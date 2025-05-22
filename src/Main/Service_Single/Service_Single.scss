@@ -15,6 +15,9 @@
 @mixin yellow{
     background-color: #FFCC4A;
 }
+@mixin green{
+    background-color: #4EAF4E;
+}
 .Service_Single{
     .background1{
         display: flex;
@@ -309,6 +312,64 @@
         }
     }
     .background7{
-        
+        @include center;
+        height: 1100px;
+        width: 100%;
+        >div{
+            @include center;
+            width: 1200px;
+            height: 925px;
+            background-color: #F5F5F5;
+            border-radius: 30px;
+            >div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 725px;
+                height: 623px;
+                >div:nth-child(1){
+                    @include block;
+                    @include green;
+                    width: 75px;
+                    height: 24px;
+                }
+                h2{
+                    font-size: 45px;
+                }
+                >div:nth-child(3){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    width: 725px;
+                    height: 485px;
+                    hr{
+                        width: 100%;
+                    }
+                    >div{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: start;
+                        >div:nth-child(1){
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: start;
+                            width: 100%;
+                            button{
+                                border: none;
+                                background: none;
+                                font-size: 40px;
+                                position: relative;
+                                height: 40px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

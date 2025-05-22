@@ -27,6 +27,7 @@ import 'swiper/css/scrollbar';
 import Header_All from '../../Header/Header_All/Header_All';
 import Footer from '../../Footer/Footer1/Footer';
 import { useState } from 'react'
+import { ans } from './data'
 
 function Question(answer){
     const [isExpanded, setIsExpanded] = useState(false);
@@ -38,12 +39,13 @@ function Question(answer){
             <div>
                 <div>
                     <h3>{answer.why}</h3>
-                    <button onClick={handleClick}>{isExpanded ? '-' : '+'}</button>
+                    <button onClick={handleClick}>{isExpanded ? <p>-</p> : <p>+</p>}</button>
                 </div>
                 <div>
                     {isExpanded && <p>{answer.tway}</p>}
                 </div>
             </div>
+            <hr />
         </>
     )
 }
@@ -228,66 +230,9 @@ export default function Service_Single(){
                             </div>
                             <h2>Customer Questions</h2>
                             <div>
-                                <div>
-                                    <div>
-                                        <h3>What will happen when I’ve sent my application?</h3>
-                                        <button onClick={handleClick}>{isExpanded ? '-' : '+'}</button>
-                                    </div>
-                                    <div>
-                                        {isExpanded && <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>}
-                                    </div>
-                                </div>
-                                <hr />
-                                <div>
-                                    <div>
-                                        <h3>Can I get a free trial before I purchase?</h3>
-                                        <button onClick={handleClick}>{isExpanded ? '-' : '+'}</button>
-                                    </div>
-                                    <div>
-                                        {isExpanded && <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>}
-                                    </div>
-                                </div>
-                                <hr />
-                                <div>
-                                    <div>
-                                        <h3>What should I include in my personal statement?</h3>
-                                        <button onClick={handleClick}>{isExpanded ? '-' : '+'}</button>
-                                    </div>
-                                    <div>
-                                        {isExpanded && <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>}
-                                    </div>
-                                </div>
-                                <hr />
-                                <div>
-                                    <div>
-                                        <h3>Will membership plans be charged automatically?</h3>
-                                        <button onClick={handleClick}>{isExpanded ? '-' : '+'}</button>
-                                    </div>
-                                    <div>
-                                        {isExpanded && <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>}
-                                    </div>
-                                </div>
-                                <hr />
-                                <div>
-                                    <div>
-                                        <h3>What will happen when I’ve sent my application?</h3>
-                                        <button onClick={handleClick}>{isExpanded ? '-' : '+'}</button>
-                                    </div>
-                                    <div>
-                                        {isExpanded && <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>}
-                                    </div>
-                                </div>
-                                <hr />
-                                <div>
-                                    <div>
-                                        <h3>Can I get a free trial before I purchase?</h3>
-                                        <button onClick={handleClick}>{isExpanded ? '-' : '+'}</button>
-                                    </div>
-                                    <div>
-                                        {isExpanded && <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>}
-                                    </div>
-                                </div>
-                                <hr />
+                                {ans.map((way) =>(
+                                    <Question {...way}/>
+                                ))}
                             </div>
                         </div>
                     </div>

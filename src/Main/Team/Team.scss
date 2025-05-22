@@ -1,0 +1,224 @@
+@mixin block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin yellow{
+    background-color: #FFCC4A;
+}
+@mixin green{
+    background-color: #4EAF4E;
+}
+.Team{
+    .background1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 487px;
+        background-image: url(./Team_assets/background1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffffD8;
+            width: 788px;
+            height: 267px;
+            border-radius: 29px;
+            margin-right: 400px;
+            >div{
+                width: 688px;
+                height: 161px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2{
+                    font-size: 50px;
+                }
+                >div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFCC4A;
+                    color: black;
+                    width: 118px;
+                    height: 24px;
+                    border-radius: 20px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            } 
+        }
+    }
+    .background2{
+        @include center;
+        width: 100%;
+        height: 1500px;
+        >div{
+            width: 1200px;
+            height: 1332px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            >div:nth-child(1){
+                width: 100%;
+                height: 113px;
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                >div:nth-child(1){
+                    width: 680px;
+                    height: 113px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    h2{
+                        font-size: 45px;
+                    }
+                    p{
+                        color: #595566;
+                    }
+                }
+                >div:nth-child(2){
+                    width: 168px;
+                    height: 59px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #181818;
+                    color: white;
+                    border-radius: 42px;
+                }
+            }
+            >div:nth-child(2){
+                width: 1200px;
+                height: 1176px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 50px;
+                grid-row-gap: 50px; 
+                >div:nth-child(1){
+                    >div:nth-child(1){
+                        background-image: url(./Team_assets/w1.png);
+                        >div{
+                            height: 34px;
+                            width: 164px;
+                            background-color: #FFCC4A;
+                        }
+                    }
+                }
+                >div:nth-child(2){
+                    >div:nth-child(1){
+                        background-image: url(./Team_assets/m1.png);
+                        >div{
+                            height: 34px;
+                            width: 105px;
+                            background-color: #181818;
+                            color: white;
+                        }
+                    }
+                }
+                >div:nth-child(3){
+                    >div:nth-child(1){
+                        background-image: url(./Team_assets/w2.png);
+                        >div{
+                            height: 34px;
+                            width: 164px;
+                            background-color: #181818;
+                            color: white;
+                        }
+                    }
+                }
+                >div:nth-child(4){
+                    >div:nth-child(1){
+                        background-image: url(./Team_assets/w3.png);
+                        >div{
+                            height: 34px;
+                            width: 164px;
+                            background-color: #181818;
+                            color: white;
+                        }
+                    }
+                }
+                >div:nth-child(5){
+                    >div:nth-child(1){
+                        background-image: url(./Team_assets/m2.png);
+                        >div{
+                            height: 34px;
+                            width: 164px;
+                            background-color: #181818;
+                            color: white;
+                        }
+                    }
+                }
+                >div:nth-child(6){
+                    >div:nth-child(1){
+                        background-image: url(./Team_assets/w4.png);
+                        >div{
+                            height: 34px;
+                            width: 164px;
+                            background-color: #181818;
+                            color: white;
+                        }
+                    }
+                }
+                >div{
+                    width: 366px;
+                    height: 563px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    >div:nth-child(1){
+                        width: 366px;
+                        height: 392px;
+                        display: flex;
+                        justify-content: end;
+                        align-items: end;
+                        border-radius: 20px;
+                        >div{
+                            height: 34px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: black;
+                            border-radius: 20px;
+                            font-size: 16px;
+                            margin-right: 20px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                    h3{
+                        font-size: 30px;
+                    }
+                    >p{
+                        color: #595566;
+                        text-align: center;
+                    }
+                    >div:nth-child(4){
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 130px;
+                        height: 23px;
+                    }
+                }
+            }
+        }
+    }
+}
