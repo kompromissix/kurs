@@ -1,0 +1,157 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin yellow{
+    background-color: #FFCC4A;
+}
+@mixin green{
+    background-color: #4EAF4E;
+}
+
+.Team_Single{
+    .background1{
+        width: 100%;
+        height: 700px;
+        @include center;
+        >div{
+            width: 1324px;
+            height: 602px;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            >div:nth-child(1){
+                background-image: url(../Team_assets/back.png);
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                width: 602px;
+                height: 581px;
+                img{
+                    width: 478px;
+                    height: 504px;
+                }
+            }
+            >div:nth-child(2){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 633px;
+                height: 501px;
+                >div:nth-child(1){
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 100%;
+                    height: 175px;
+                    >div{
+                        width: 523px;
+                        height: 68px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        >hr{
+                            height: 35px;
+                        }
+                        >div:nth-child(1){
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 282px;
+                            height: 68px;
+                            align-items: start;
+                            h2{
+                                font-size: 35px;
+                            }
+                            h3{
+                                font-size: 20px;
+                                color: #595566;
+                            }
+                        }
+                        >div:nth-child(3){
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 190px;
+                        }   
+                    }
+                    >p{
+                        color: #595566;
+                    }
+                }
+                >hr{
+                    width: 100%;
+                }
+                >div:nth-child(3){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 246px;
+                    >h2{
+                        font-size: 32px;
+                    }
+                    >p{
+                        color: #595566;
+                    }
+                }
+            }
+        }
+    }
+    .background2{
+        width: 100%;
+        height: 450px;
+        @include center;
+        >div{
+            background-color: #181818;
+            background-image: url(../Team_assets/Background2.png);
+            width: 1200px;
+            height: 252px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 20px;
+            >div:nth-child(1){
+                width: 447px;
+                height: 77px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: white;
+                >h3{
+                    font-size: 35px;
+                }
+            }
+            >div:nth-child(2){
+                width: 500px;
+                height: 68px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                >input{
+                    width: 284px;
+                    height: 68px;
+                    border-radius: 54px;
+                    padding-left: 20px;
+                    border: none;
+                }
+                >button{
+                    width: 168px;
+                    height: 61px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 42px;
+                    @include yellow;
+                    color: black;
+                    font-size: 18px;
+                    border: none;
+                    font-weight: 600;   
+                }
+            }
+        }
+    }
+}

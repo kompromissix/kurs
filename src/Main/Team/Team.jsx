@@ -4,6 +4,8 @@ import Footer from '../../Footer/Footer1/Footer'
 import Instagram from './Team_assets/Instagram.png'
 import Facebook from './Team_assets/Facebook.png'
 import Twitter from './Team_assets/Twitter.png'
+import ruki from './Team_assets/ruki.png'
+import { Link } from 'react-router-dom'
 
 export default function Team(){
     return(
@@ -32,7 +34,7 @@ export default function Team(){
                             </div>
                         </div>
                         <div>
-                            <div>
+                            <Link to="/Team_Single_one">
                                 <div>
                                     <div>
                                         <p>CEO at Company</p>
@@ -45,8 +47,8 @@ export default function Team(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
-                            <div>
+                            </Link>
+                            <Link to="/Team_Single_two">
                                 <div>
                                     <div>
                                         <p>Manager</p>
@@ -59,8 +61,8 @@ export default function Team(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
-                            <div>
+                            </Link>
+                            <Link to="/Team_Single_three">
                                 <div>
                                     <div>
                                         <p>CEO at Company</p>
@@ -73,8 +75,8 @@ export default function Team(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
-                            <div>
+                            </Link>
+                            <Link to="/Team_Single_four">
                                 <div>
                                     <div>
                                         <p>CEO at Company</p>
@@ -87,8 +89,8 @@ export default function Team(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
-                            <div>
+                            </Link>
+                            <Link to="/Team_Single_five">
                                 <div>
                                     <div>
                                         <p>CEO at Company</p>
@@ -101,8 +103,8 @@ export default function Team(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
-                            <div>
+                            </Link>
+                            <Link to="/Team_Single_six">
                                 <div>
                                     <div>
                                         <p>CEO at Company</p>
@@ -115,8 +117,26 @@ export default function Team(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+                <section className='background3'>
+                    <div>
+                        <div>
+                            <div>
+                                <p>Contact</p>
+                            </div>
+                            <h2>Ready To Talk?</h2>
+                            <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus sed turpis. Pellentesque  pellentesque habitant morbi tristique.</p>
+                            <div>
+                                <input type="text" placeholder='your mail address'/>
+                                <button type="button">
+                                    <p>Send Message</p>
+                                </button>
                             </div>
                         </div>
+                        <img src={ruki} alt="" />
                     </div>
                 </section>
             </main>
