@@ -1,0 +1,152 @@
+@mixin block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@mixin center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin yellow{
+    background-color: #FFCC4A;
+}
+@mixin green{
+    background-color: #4EAF4E;
+}
+.Blog_Single{
+    .background1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 744px;
+        background-image: url(./Blog_Single_assets/background1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffffD8;
+            width: 938px;
+            height: 257px;
+            border-radius: 29px;
+            margin-right: 400px;
+            >div{
+                width: 796px;
+                height: 161px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2{
+                    font-size: 50px;
+                }
+                >div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFCC4A;
+                    color: black;
+                    width: 216px;
+                    height: 25px;
+                    border-radius: 20px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    .background2{
+        width: 100%;
+        height: 2400px;
+        @include center;
+        h3{
+            font-size: 40px
+        }
+        p{
+            color: #595566;
+        }
+        >div{
+            width: 1200px;
+            height: 2193px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            >div:nth-child(1){
+                width: 953px;
+                height: 157px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            >div:nth-child(3){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 985px;
+                height: 285px;
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 132px;
+                }
+                >ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 89px;
+                    padding-left: 25px;
+                    color: #595566;
+                }
+            }
+            >div:nth-child(4){
+                width: 1200px;
+                height: 443px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-image: url(./Blog_Single_assets/Background2.png);
+                background-color: #181818;
+                border-radius: 30px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                >h4{
+                    font-size: 32px;
+                    padding-top: 33px;
+                    color: white;
+                    width: 900px;
+                    text-align: center;
+                }
+            }
+            >div:nth-child(5){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 949px;
+                height: 252px;
+            }
+            >div:nth-child(6){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 794px;
+                height: 325px;
+                background-image: url(./Blog_Single_assets/Background3.png);
+                >div{
+
+                }
+            }
+        }
+    }
+}
