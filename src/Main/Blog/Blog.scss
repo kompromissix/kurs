@@ -18,14 +18,14 @@
 @mixin green{
     background-color: #4EAF4E;
 }
-.Team{
+.Blog{
     .background1{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 487px;
-        background-image: url(./Team_assets/background1.png);
+        background-image: url(./Blog_assets/background.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -34,12 +34,12 @@
             justify-content: center;
             align-items: center;
             background-color: #ffffffD8;
-            width: 483px;
+            width: 603px;
             height: 199px;
             border-radius: 29px;
             margin-right: 600px;
             >div{
-                width: 363px;
+                width: 503px;
                 height: 103px;
                 display: flex;
                 flex-direction: column;
@@ -53,7 +53,7 @@
                     align-items: center;
                     background-color: #FFCC4A;
                     color: black;
-                    width: 82px;
+                    width: 80px;
                     height: 24px;
                     border-radius: 20px;
                     font-size: 16px;
@@ -64,160 +64,119 @@
         }
     }
     .background2{
-        @include center;
         width: 100%;
-        height: 1500px;
+        height: 2469px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F5F5;
         >div{
-            width: 1200px;
-            height: 1332px;
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            height: 2124px;
+            width: 1200px;
             >div:nth-child(1){
+                display: flex;
                 width: 100%;
-                height: 113px;
+                height: 126px;
                 display: flex;
                 justify-content: space-between;
-                align-items: end;
+                align-items: center;
                 >div:nth-child(1){
-                    width: 680px;
-                    height: 113px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    align-items: start;
+                    width: 507px;
                     h2{
                         font-size: 45px;
                     }
-                    p{
-                        color: #595566;
+                    >div{
+                        width: 76px;
+                        height: 26px;
+                        background-color: #4EAF4E;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        border-radius: 20px;
+                        font-size: 16px;
+                        letter-spacing: 1px;
                     }
                 }
                 >div:nth-child(2){
-                    width: 168px;
-                    height: 59px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: #181818;
-                    color: white;
+                    width: 167px;
+                    height: 61px;
+                    background-color: #FFCC4A;
                     border-radius: 42px;
                 }
             }
             >div:nth-child(2){
                 width: 1200px;
-                height: 1176px;
+                height: 1929px;
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-column-gap: 50px;
-                grid-row-gap: 50px; 
-                >a:nth-child(1){
-                    >div:nth-child(1){
-                        background-image: url(./Team_assets/w1.png);
-                        >div{
-                            height: 34px;
-                            width: 164px;
-                            background-color: #FFCC4A;
-                        }
-                    }
-                }
-                >a:nth-child(2){
-                    >div:nth-child(1){
-                        background-image: url(./Team_assets/m1.png);
-                        >div{
-                            height: 34px;
-                            width: 105px;
-                            background-color: #181818;
-                            color: white;
-                        }
-                    }
-                }
-                >a:nth-child(3){
-                    >div:nth-child(1){
-                        background-image: url(./Team_assets/w2.png);
-                        >div{
-                            height: 34px;
-                            width: 164px;
-                            background-color: #181818;
-                            color: white;
-                        }
-                    }
-                }
-                >a:nth-child(4){
-                    >div:nth-child(1){
-                        background-image: url(./Team_assets/w3.png);
-                        >div{
-                            height: 34px;
-                            width: 164px;
-                            background-color: #181818;
-                            color: white;
-                        }
-                    }
-                }
-                >a:nth-child(5){
-                    >div:nth-child(1){
-                        background-image: url(./Team_assets/m2.png);
-                        >div{
-                            height: 34px;
-                            width: 164px;
-                            background-color: #181818;
-                            color: white;
-                        }
-                    }
-                }
-                >a:nth-child(6){
-                    >div:nth-child(1){
-                        background-image: url(./Team_assets/w4.png);
-                        >div{
-                            height: 34px;
-                            width: 164px;
-                            background-color: #181818;
-                            color: white;
-                        }
-                    }
-                }
-                >a{
-                    width: 366px;
-                    height: 563px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 27px;
+                grid-row-gap: 60px; 
+                >div{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    align-items: center;
-                    text-decoration: none;
-                    >div:nth-child(1){
-                        width: 366px;
-                        height: 392px;
-                        display: flex;
-                        justify-content: end;
-                        align-items: end;
-                        border-radius: 20px;
-                        >div{
-                            height: 34px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: black;
-                            border-radius: 20px;
-                            font-size: 16px;
-                            margin-right: 20px;
-                            margin-bottom: 25px;
-                        }
-                    }
+                    height: 603px;
+                    width: 583px;
+                    align-items: start;
                     h3{
                         font-size: 30px;
-                        color: black;
                     }
                     >p{
                         color: #595566;
-                        text-align: center;
                     }
-                    >div:nth-child(4){
+                    hr{
+                        width: 100%;
+                    }
+                    >div{
                         display: flex;
+                        flex-direction: column;
                         justify-content: space-between;
-                        align-items: center;
-                        width: 130px;
-                        height: 23px;
+                        width: 100%;
+                        align-items: start;
+                        height: 89px;
+                        >div{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            height: 61px;
+                            >div:nth-child(1){
+                                display: flex;
+                                justify-content: space-between;
+                                width: 328px;
+                                height: 60px;
+                                >div{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 260px;
+                                    >hr{
+                                        width: 0px;
+                                        height: 14px;
+                                    }
+                                }
+                                
+                            }
+                            >div:nth-child(2){
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 167px;
+                                height: 61px;
+                                border: 1px solid #C1C1C1;
+                                border-radius: 42px;
+                            }
+                        }
                     }
                 }
             }

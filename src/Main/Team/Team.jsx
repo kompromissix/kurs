@@ -16,9 +16,9 @@ export default function Team(){
                     <div>
                         <div>
                             <div>
-                                <p>Services</p>
+                                <p>Team</p>
                             </div>
-                            <h2>Creative Services For Boost Your Business Growth</h2>
+                            <h2>The Consultors</h2>
                         </div>
                     </div>
                 </section>

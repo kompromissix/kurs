@@ -14,6 +14,8 @@ import Team_Single_three from './Main/Team/Team_Single/Team_Single_three'
 import Team_Single_four from './Main/Team/Team_Single/Team_Single_four'
 import Team_Single_five from './Main/Team/Team_Single/Team_Single_five'
 import Team_Single_six from './Main/Team/Team_Single/Team_Single_six'
+import Case_Study from './Main/Case_Study/Case_Study'
+import Blog from './Main/Blog/Blog'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -32,6 +34,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/Team_Single_four" element={<Team_Single_four/>} />
         <Route path="/Team_Single_five" element={<Team_Single_five/>} />
         <Route path="/Team_Single_six" element={<Team_Single_six/>} />
+        <Route path="/Case_Study" element={<Case_Study/>} />
+        <Route path="/Blog" element={<Blog/>} />
       </Routes>
     </HashRouter>
   </StrictMode>,

@@ -1,0 +1,216 @@
+@mixin block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin yellow{
+    background-color: #FFCC4A;
+}
+@mixin green{
+    background-color: #4EAF4E;
+}
+.Case_Study{
+    .background1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 487px;
+        background-image: url(./Case_Study_assets/background1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffffD8;
+            width: 413px;
+            height: 199px;
+            border-radius: 29px;
+            margin-right: 600px;
+            >div{
+                width: 323px;
+                height: 103px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2{
+                    font-size: 50px;
+                }
+                >div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFCC4A;
+                    color: black;
+                    width: 164px;
+                    height: 24px;
+                    border-radius: 20px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            } 
+        }
+    }
+    .background2{
+        width: 100%;
+        height: 1100px;
+        @include center;
+        >div{
+            width: 1200px;
+            height: 908px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tabs {
+            width: 925px;
+            height: 97px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #181818;
+            padding-left: 44px;
+            padding-right: 44px;
+            color: white;
+            border-radius: 30px;
+        }
+        .tabss_div{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .tabss{
+            width: 207px;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tab {
+            position: relative;
+            cursor: pointer;
+            font-size: 23px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .tab.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #FFCC4A;
+        }
+        .tab.active {
+            color: #FFCC4A;
+        }
+        .swiperss{
+            width: 100%;
+        }
+        .swipe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            height: 763px;
+            background-color: #FAFAFA;
+            border-radius: 30px;
+            >div{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 25px;
+                grid-row-gap: 25px; 
+                width: 1150px;
+                height: 713px;
+                >div{
+                    width: 366px;
+                    height: 344px;
+                    border-radius: 20px;
+                    >div{
+                        display: none;
+                    }
+                }
+                >div:hover{
+                    >div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #18181899;
+                        width: 100%;
+                        height: 344px;
+                        border-radius: 20px;
+                        >div{
+                            width: 310px;
+                            height: 297px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            >div:nth-child(1){
+                                width: 100%;
+                                display: flex;
+                                justify-content: end;
+                                >div{
+                                    width: 54px;
+                                    height: 54px;
+                                    background: linear-gradient(-26deg, #DDA003, #FFE9B1);
+                                    border-radius: 150px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 53px;
+                                    font-family: "Cabin", sans-serif !important;
+                                    p{
+                                        height: 80px;
+                                    }
+                                }
+                            }
+                            >div:nth-child(2){
+                                >h3{
+                                    font-size: 25px;
+                                    color: white;
+                                }
+                                >p{
+                                    font-size: 16px;
+                                    color: #FFCC4A;
+                                }
+                            }
+                        }
+                    }
+                }
+                >div:nth-child(1){
+                    background-image: url(Case_Study_assets/Hover1.png);
+                }
+                >div:nth-child(2){
+                    background-image: url(Case_Study_assets/Hover2.png);
+                }
+                >div:nth-child(3){
+                    background-image: url(Case_Study_assets/Hover3.png);
+                }
+                >div:nth-child(4){
+                    background-image: url(Case_Study_assets/Hover4.png);
+                }
+                >div:nth-child(5){
+                    background-image: url(Case_Study_assets/Hover5.png);
+                }
+                >div:nth-child(6){
+                    background-image: url(Case_Study_assets/Hover6.png);
+                }
+            }
+        }
+    }
+}

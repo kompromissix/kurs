@@ -59,9 +59,9 @@ export default function Service_Single(){
                     <div>
                         <div>
                             <div>
-                                <p>Services</p>
+                                <p>Service sINGLE</p>
                             </div>
-                            <h2>Creative Services For Boost Your Business Growth</h2>
+                            <h2>Services Details</h2>
                         </div>
                     </div>
                 </section>

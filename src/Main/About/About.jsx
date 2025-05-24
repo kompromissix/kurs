@@ -12,6 +12,7 @@ import { Black } from '../Home/Home'
 import Instagram from './About_assets/Instagram.png'
 import Facebook from './About_assets/Facebook.png'
 import Twitter from './About_assets/Twitter.png'
+import { Link } from 'react-router-dom'
 
 export default function About(){
     return(
@@ -154,7 +155,7 @@ export default function About(){
                             <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team.</p>
                         </div>
                         <div>
-                            <div>
+                            <Link to="/Team_Single_one">
                                 <div>
                                     <div>
                                         <p>CEO at Company</p>
@@ -167,8 +168,8 @@ export default function About(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
-                            <div>
+                            </Link>
+                            <Link to="/Team_Single_two">
                                 <div>
                                     <div>
                                         <p>Manager</p>
@@ -181,8 +182,8 @@ export default function About(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
-                            <div>
+                            </Link>
+                            <Link to="/Team_Single_three">
                                 <div>
                                     <div>
                                         <p>CEO at Company</p>
@@ -195,7 +196,7 @@ export default function About(){
                                     <img src={Facebook} alt="" />
                                     <img src={Twitter} alt="" />
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
