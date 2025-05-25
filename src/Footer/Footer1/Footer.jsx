@@ -25,7 +25,7 @@ export default function Footer(){
                                     <li>FAQ</li>
                                     <li><Link to='/Service_Single'>Service Single</Link></li>
                                     <li>Get Quote</li>
-                                    <li>Prices</li>
+                                    <li><Link to='/Blog'>Blog</Link></li>
                                 </ul>
                             </div>
                             <div>

@@ -1,10 +1,12 @@
 import './Blog_Single.scss'
-import Header_All from '../../Header/Header_All/Header_All'
-import Footer from '../../Footer/Footer1/Footer'
+import Header_All from '../../../Header/Header_All/Header_All'
+import Footer from '../../../Footer/Footer1/Footer'
 import img from './Blog_Single_assets/Image.png'
 import skob from './Blog_Single_assets/skob.png'
 import icon from './Blog_Single_assets/icon.png'
-
+import Facebook from './Blog_Single_assets/Facebook.png'
+import Instagram from './Blog_Single_assets/Instagram.png'
+import Twiter from './Blog_Single_assets/Twiter.png'
 
 export default function Blog_Single(){
     return(
@@ -63,9 +65,9 @@ export default function Blog_Single(){
                                     </div>
                                     <p>Leads the global expansion of the designerz brand and overseas investment in solutions and innovation. Renowned coder and an authority on matters of industrial experience & interface.</p>
                                     <div>
-                                        <img src={} alt="" />
-                                        <img src={} alt="" />
-                                        <img src={} alt="" />
+                                        <img src={Facebook} alt="" />
+                                        <img src={Instagram} alt="" />
+                                        <img src={Twiter} alt="" />
                                     </div>
                                 </div>
                             </div>
