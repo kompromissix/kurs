@@ -12,6 +12,12 @@
   justify-content: center;
   align-items: center;
 }
+@mixin yellow{
+    background-color: #FFCC4A;
+}
+@mixin green{
+    background-color: #4EAF4E;
+}
 .services{
     .background1{
         display: flex;
@@ -303,6 +309,122 @@
                             font-weight: 600;
                         }
                     }
+                }
+            }
+        }
+    }
+    .background5{
+        @include center;
+        width: 100%;
+        height: 850px;
+        >div{
+            width: 1268px;
+            height: 574px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            >div:nth-child(1){
+                width: 470px;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                >div:nth-child(1){
+                    @include yellow;
+                    @include block;
+                    width: 127px;
+                    height: 26px;
+                }
+                h2{
+                    font-size: 45px;
+                }
+                >p{
+                    color: #595566;
+                }
+                >div:nth-child(4){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    width: 330px;
+                    height: 296px;
+                    >div{
+                        display: flex;
+                        align-items: center;
+                        >div{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: start;
+                            padding-left: 16px;
+                            p{
+                                color: #595566;
+                            }
+                            h3{
+                                font-size: 20px;
+                                padding-top: 3px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+            >form:nth-child(2){
+                width: 688px;
+                height: 534px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                >div:nth-child(1){
+                    width: 666px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                >div:nth-child(2){
+                    width: 666px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                >div:nth-child(3){
+                    width: 666px;
+                    height: 189px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    >input{
+                        width: 633px;
+                        height: 77px;
+                        padding-left: 33px;
+                        border-radius: 22px;
+                        border: 1px solid #C1C1C1;
+                        padding-bottom: 70px;
+                    }
+                }
+                >div{
+                    >div{
+                        input{
+                            width: 285px;
+                            height: 68px;
+                            padding-left: 33px;
+                            border-radius: 54px;
+                            border: 1px solid #C1C1C1;
+                        }
+                    }
+                }
+                >button{
+                    width: 168px;
+                    height: 61px;
+                    background-color: #181818;
+                    color: white;
+                    border-radius: 42px;
+                    border: none;
+                    font-size: 18px;
                 }
             }
         }

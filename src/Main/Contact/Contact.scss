@@ -18,28 +18,25 @@
 @mixin green{
     background-color: #4EAF4E;
 }
-.Case_Study{
+
+.contact{
     .background1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         width: 100%;
         height: 487px;
-        background-image: url(./Case_Study_assets/background1.png);
+        background-image: url(./Contact_assets/background1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         >div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include center;
             background-color: #ffffffD8;
-            width: 413px;
+            width: 603px;
             height: 199px;
             border-radius: 29px;
             margin-right: 600px;
             >div{
-                width: 323px;
+                width: 503px;
                 height: 103px;
                 display: flex;
                 flex-direction: column;
@@ -48,172 +45,145 @@
                     font-size: 50px;
                 }
                 >div{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include center;
                     background-color: #FFCC4A;
                     color: black;
-                    width: 164px;
+                    width: 80px;
                     height: 24px;
                     border-radius: 20px;
                     font-size: 16px;
                     text-transform: uppercase;
                     letter-spacing: 2px;
                 }
-            } 
+            }
         }
     }
     .background2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        height: 1100px;
-        @include center;
+        height: 705px;
         >div{
-            width: 1200px;
-            height: 908px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .tabs {
-            width: 925px;
-            height: 97px;
+            width: 1300px;
+            height: 571px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #181818;
-            padding-left: 44px;
-            padding-right: 44px;
-            color: white;
-            border-radius: 30px;
-        }
-        .tabss_div{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        .tabss{
-            width: 207px;
-            height: 120px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .tab {
-            position: relative;
-            cursor: pointer;
-            font-size: 23px;
-            font-weight: 500;
-            transition: color 0.3s ease-in-out;
-        }
-        
-        .tab.active::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 2px;
-            background-color: #FFCC4A;
-        }
-        .tab.active {
-            color: #FFCC4A;
-        }
-        .swiperss{
-            width: 100%;
-        }
-        .swipe{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 1200px;
-            height: 763px;
-            background-color: #FAFAFA;
-            border-radius: 30px;
             >div{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-column-gap: 25px;
-                grid-row-gap: 25px; 
-                width: 1150px;
-                height: 713px;
-                >div{
-                    width: 366px;
-                    height: 344px;
-                    border-radius: 20px;
-                    >div{
-                        display: none;
-                    }
+                width: 481px;
+                height: 364px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                >div:nth-child(1){
+                    @include block;
+                    @include green;
+                    width: 126px;
+                    height: 24px;
+                    color: white;
                 }
-                >div:hover{
+                h2{
+                    font-size: 45px;
+                }
+                >p{
+                    color: #595566;
+                }
+                >div:nth-child(4){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 326px;
+                    height: 180px;
                     >div{
                         display: flex;
-                        justify-content: center;
+                        justify-content: start;
                         align-items: center;
-                        background-color: #18181899;
-                        width: 100%;
-                        height: 344px;
-                        border-radius: 20px;
-                        >div{
-                            width: 310px;
-                            height: 297px;
+                        >div:nth-child(1){
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #181818;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 100px;
+                        }
+                        >div:nth-child(2){
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
-                            >div:nth-child(1){
-                                width: 100%;
-                                display: flex;
-                                justify-content: end;
-                                >div{
-                                    width: 54px;
-                                    height: 54px;
-                                    background: linear-gradient(-26deg, #DDA003, #FFE9B1);
-                                    border-radius: 150px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    font-size: 53px;
-                                    font-family: "Cabin", sans-serif !important;
-                                    p{
-                                        height: 80px;
-                                    }
-                                }
+                            height: 43px;
+                            padding-left: 20px;
+                            h3{
+                                color: #595566;
+                                font-size: 16px;
+                                font-weight: 500;
                             }
-                            >div:nth-child(2){
-                                >h3{
-                                    font-size: 25px;
-                                    color: white;
-                                }
-                                >p{
-                                    font-size: 16px;
-                                    color: #FFCC4A;
-                                }
+                            h5{
+                                font-weight: 600;
+                                font-size: 16px;
                             }
                         }
                     }
                 }
-                >div:nth-child(1){
-                    background-image: url(Case_Study_assets/Hover1.png);
+            }
+
+        }
+    }
+    .background3{
+        width: 100%;
+        height: 450px;
+        @include center;
+        >form{
+            background-color: #181818;
+            background-image: url(../Team/Team_assets/Background2.png);
+            width: 1200px;
+            height: 252px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 20px;
+            >div:nth-child(1){
+                width: 447px;
+                height: 77px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: white;
+                >h3{
+                    font-size: 35px;
                 }
-                >div:nth-child(2){
-                    background-image: url(Case_Study_assets/Hover2.png);
+            }
+            >div:nth-child(2){
+                width: 500px;
+                height: 68px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                >input{
+                    width: 284px;
+                    height: 68px;
+                    border-radius: 54px;
+                    padding-left: 20px;
+                    border: none;
                 }
-                >div:nth-child(3){
-                    background-image: url(Case_Study_assets/Hover3.png);
-                }
-                >div:nth-child(4){
-                    background-image: url(Case_Study_assets/Hover4.png);
-                }
-                >div:nth-child(5){
-                    background-image: url(Case_Study_assets/Hover5.png);
-                }
-                >div:nth-child(6){
-                    background-image: url(Case_Study_assets/Hover6.png);
+                >button{
+                    width: 168px;
+                    height: 61px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 42px;
+                    @include yellow;
+                    color: black;
+                    font-size: 18px;
+                    border: none;
+                    font-weight: 600;   
                 }
             }
         }
     }
-    .background3{
+    .background4{
         @include center;
         width: 100%;
         height: 850px;

@@ -17,6 +17,8 @@ import Team_Single_six from './Main/Team/Team_Single/Team_Single_six'
 import Case_Study from './Main/Case_Study/Case_Study'
 import Blog from './Main/Blog/Blog'
 import Blog_Single from './Main/Blog/Blog_Single/Blog_Single'
+import Contact from './Main/Contact/Contact'
+import Not_Found from './Main/Not_Found/Not_Found'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -38,6 +40,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/Case_Study" element={<Case_Study/>} />
         <Route path="/Blog" element={<Blog/>} />
         <Route path="/Blog_Single" element={<Blog_Single/>} />
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="*" element={<Not_Found/>} />
       </Routes>
     </HashRouter>
   </StrictMode>,

@@ -21,10 +21,10 @@ export default function Footer(){
                                 <h3>Product</h3>
                                 <hr />
                                 <ul>
-                                    <li>Service</li>
-                                    <li>FAQ</li>
+                                    <li><Link to='/Services'>Service</Link></li>
+                                    <li><Link to='*'>FAQ</Link></li>
                                     <li><Link to='/Service_Single'>Service Single</Link></li>
-                                    <li>Get Quote</li>
+                                    <li><Link to='*'>Get Quote</Link></li>
                                     <li><Link to='/Blog'>Blog</Link></li>
                                 </ul>
                             </div>
@@ -33,11 +33,11 @@ export default function Footer(){
                                 <hr />
                                 <ul>
                                     <li><Link to='/About'>About</Link></li>
-                                    <li>News</li>
-                                    <li>Contacts</li>
-                                    <li>Testimonials</li>
+                                    <li><Link to='*'>News</Link></li>
+                                    <li><Link to='/Contacts'>Contacts</Link></li>
+                                    <li><Link to='*'>Testimonials</Link></li>
                                     <li><Link to='/Team'>Our team</Link></li>
-                                    <li>Our approach</li>
+                                    <li><Link to='*'>Our approach</Link></li>
                                 </ul>
                             </div>
                             <div>
