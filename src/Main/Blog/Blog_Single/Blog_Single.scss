@@ -144,7 +144,40 @@
                 height: 325px;
                 background-image: url(./Blog_Single_assets/Background3.png);
                 >div{
-
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 718px;
+                    height: 221px;
+                    color: white;
+                    >div{
+                        width: 458px;
+                        height: 197px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h3{
+                            font-size: 35px;
+                        }
+                        h5{
+                            font-size: 18px;
+                        }
+                        >div:nth-child(1){
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 236px;
+                            height: 73px;
+                        }
+                        p{
+                            color: white;
+                        }
+                        >div:nth-child(3){
+                            width: 103px;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
                 }
             }
         }
